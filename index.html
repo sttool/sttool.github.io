@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+
+  <title>KCP Check n Go</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- Include SmartCart CSS -->
+    <link href="cart/smart_cart.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/swipe.css" />
+	<link rel="stylesheet" href="css/skin.css" />
+
+	<!--Font Awesome-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--Prettify-->
+	  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Ropa+Sans" rel="stylesheet" />
+	<!--Menu Script-->
+	<script src="js/swipe.js"> </script>
+	
+	<!----print--->
+	<style type="text/css">
+	@media print
+	{
+	html { visibility: hidden; }
+	#smartcart * { visibility: visible; }
+	#smartcart { position: relative; margin-top: -130px; width: 350px;}
+	#smartcart > div.panel-footer.sc-toolbar > div.sc-cart-toolbar > button.btn.btn-danger.sc-cart-clear { visibility: hidden; }
+	.barcode{height :100px;}
+	.list-group-item-heading {align-items: right}
+	}
+	</style>
+	<!----print--->	
+	
+	<script>
+		function printit() {
+			window.print();
+		}
+	</script>
+
+</head>
+
+<body>
+	<div style="height: 55px; margin: 60px 0 0 20px;">
+	<span style="font-size: 30px">KCP Check & </span> 
+	<button style="font-size: 20px; margin-top: -15px" class="btn btn-warning btn-lg" onclick="printit()">Print</button>
+	</div>
+	
+	<aside class="col-md-12" style='height: 700px'>
+
+	<div id="smartcart"></div>
+	<button class="btn btn-warning btn-md pull-right btnsecond" onclick="printit()">Print</button>
+	</aside>
+</body>
+
+
+<!--Navigation-->
+<header class="swipe-menu default-theme">
+
+	<!--Navigation Icon-->
+	<div class="nav-icon">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+
+
+	<nav class="codehim-nav">
+		<br />
+		<section class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<div id="gp1"></div>
+				<div id="gp2"></div>
+				<div id="gp3"></div>
+				</div>
+			</div>
+			<br/><br/><br/>
+		</section>
+		
+		<!-- Include jQuery -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" ></script>-->
+		<!-- Include SmartCart -->
+		<script src="cart/jquery.smartCart.js" type="text/javascript"></script>
+		<!-- Include barcode API -->
+		<script src="cart/JsBarcode.all.min.js" type="text/javascript"></script>
+		<script src="cart/inititem.js" type="text/javascript"></script>
+	</nav>
+
+</header>
+
+<!--dim background effect when open menu-->
+<div class="dim-overlay"> </div>
+
+<!--Swipe Detector For Open And Close Drawer Navigation-->
+<div class="openswipe" id="swipezone">
+</div>
+
+
+</html>
