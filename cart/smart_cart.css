@@ -20,7 +20,7 @@
     font-size: 45px;
     position: absolute;
     top: -12px;
-    right: -5px;
+    margin-left: -5px;
 }
 
 .sc-cart-remove:hover {
