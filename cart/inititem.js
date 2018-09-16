@@ -28,7 +28,7 @@ $(document).ready(function(){
 		for(i = 0; i < (grparr.length-1)/3; i++){	
 			grp += '<div class="col-md-12 col-sm-6"> <div class="sc-product-item thumbnail"> <div class="caption"> <h4 data-name="product_name">' + grparr[arrcounter++];
 
-			grp +='</h4><p data-name="product_desc">' + grparr[arrcounter++] + '</p> <div> <div class="form-group2"><input name="product_price" value="';
+			grp +='</h4><p data-name="product_desc" class="desc">' + grparr[arrcounter++] + '</p> <div> <div class="form-group2"><input name="product_price" value="';
 			
 			grp += grparr[arrcounter++] + '" type="hidden" /> <input name="product_id" value="12" type="hidden" /> <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button><input class="sc-cart-item-qty pull-right" name="product_quantity" min="1" value="1" type="number"> </div> </div> <div class="clearfix"></div> </div> </div> </div>';
 		}

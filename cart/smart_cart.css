@@ -19,7 +19,7 @@
     border: none;
     font-size: 45px;
     position: absolute;
-    top: -17px;
+    top: -12px;
     right: 5px;
 }
 
@@ -194,4 +194,12 @@ h4, .caption{
 
 #panel > div > button{
 	padding: 5px 10px;
+}
+
+.list-group-item{
+	padding: 5px 15px;
+}
+
+.desc{
+	visibility: visable;
 }
