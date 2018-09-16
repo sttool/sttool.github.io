@@ -48,7 +48,7 @@ function gencode(product_desc) {
         combineProducts: true, // combine similar products on cart
         highlightEffect: true, // highlight effect on adding/updating product in cart
 				
-		cartItemTemplate:'<img class="barcode" id="a{product_desc}"/><img class="barcode" id="b{product_desc}"/><img class="barcode" id="c{product_desc}"/><img class="barcode" id="d{product_desc}"/><img class="barcode" id="e{product_desc}"/><img class="barcode" id="f{product_desc}"/><img class="barcode" id="g{product_desc}"/><img class="barcode" id="h{product_desc}"/><script>gencode({product_desc});</script> <h4 class="list-group-item-heading">{product_name}</h4><p class="list-group-item-text"></p>',
+		cartItemTemplate:'<img class="barcode" id="a{product_desc}"/><img class="barcode" id="b{product_desc}"/><img class="barcode" id="c{product_desc}"/><img class="barcode" id="d{product_desc}"/><img class="barcode" id="e{product_desc}"/><img class="barcode" id="f{product_desc}"/><img class="barcode" id="g{product_desc}"/><img class="barcode" id="h{product_desc}"/><br/><br/><script>gencode({product_desc});</script> <h4 class="list-group-item-heading">{product_name}</h4><p class="list-group-item-text"></p>',
 		
         cartItemQtyTemplate: '{display_price} × {display_quantity} = {display_amount}',
         productContainerSelector: '.sc-product-item',

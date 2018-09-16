@@ -20,7 +20,7 @@
     font-size: 45px;
     position: absolute;
     top: -17px;
-    right: 25px;
+    right: 15px;
 }
 
 .sc-cart-remove:hover {
@@ -168,7 +168,7 @@
 }
 
 .barcode{
-	height: 0px;
+	height: 100px;
 }
 
 .btnsecond{
