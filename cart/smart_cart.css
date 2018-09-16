@@ -17,10 +17,10 @@
 .sc-cart-remove {
     background: transparent;
     border: none;
-    font-size: 40px;
+    font-size: 45px;
     position: absolute;
-    top: -15px;
-    right: 30px;
+    top: -17px;
+    right: 25px;
 }
 
 .sc-cart-remove:hover {
@@ -177,7 +177,11 @@
 
 h4, .caption{
 	padding: 0 !important;
-	margin: 0px !important
+	margin: 0px !important;
+}
+
+#smartcart > div.list-group.sc-cart-item-list > div > h4{
+	line-height: 0;
 }
 
 .panel-body{
@@ -186,4 +190,8 @@ h4, .caption{
 
 .thumbnail{
 	margin-bottom: 5px;
+}
+
+#panel > div > button{
+	padding: 5px 10px;
 }

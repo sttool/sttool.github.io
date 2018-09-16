@@ -26,7 +26,7 @@ $(document).ready(function(){
 		var grp = '<div class="panel panel-default"> <div class="panel-heading">' + grparr[arrcounter++] + '</div> <div class="panel-body"><div class="row">';
 		
 		for(i = 0; i < (grparr.length-1)/3; i++){	
-			grp += '<div class="col-md-12 col-sm-6"> <div class="sc-product-item thumbnail"> <div class="caption"> <h4 data-name="product_name">' + grparr[arrcounter++];
+			grp += '<div class="col-md-10 col-sm-6"> <div class="sc-product-item thumbnail"> <div class="caption"> <h4 data-name="product_name">' + grparr[arrcounter++];
 
 			grp +='</h4><p data-name="product_desc">' + grparr[arrcounter++] + '</p> <div> <div class="form-group2"><input name="product_price" value="';
 			
