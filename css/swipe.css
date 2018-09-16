@@ -983,7 +983,7 @@ margin-right: auto;
 
 } 
 .openswipe {
-   width: 90px;
+   width: 0px;
    background: transparent;
    color: #fff;
    position: fixed;
@@ -994,7 +994,7 @@ margin-right: auto;
 }
 .closeswipe{
    right: 200px !important;
-   width: 150px !important;
+   width: 0px !important;
    overflow: hidden;
    height: 100vh;
    z-index: 5;
